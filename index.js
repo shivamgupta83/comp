@@ -5,7 +5,11 @@ const { default: mongoose } = require("mongoose")
 
 
 
-mongoose.connect("mongodb+srv://ritesh:zbZGz8vHtAKmPfio@newcluster.88v7uq9.mongodb.net/compony-project", { useNewUrlParser: true }, mongoose.set('strictQuery', true)
+mongoose.connect("mongodb+srv://ritesh:zbZGz8vHtAKmPfio@newcluster.88v7uq9.mongodb.net/compony-project", 
+
+{ useNewUrlParser: true }, 
+mongoose.set('strictQuery', true)
+
 )
     .then(() => { console.log("mongoodb is connected") })
     .catch((err) => {
